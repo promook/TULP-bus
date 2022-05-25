@@ -101,7 +101,7 @@ export default function TicketPage({ history }) {
       <div className="tpMain">
         <article className="ticket">
           <header className="ticket__wrapper">
-            <div className="ticket__header">1 🎟 UNIQUE TRAVELS</div>
+            <div className="ticket__header">🎟 TULP BUS</div>
           </header>
           <div className="ticket__divider">
             <div className="ticket__notch"></div>
@@ -110,7 +110,6 @@ export default function TicketPage({ history }) {
           <div className="ticket__body">
             <section className="ticket__section">
               {getLocationData()}
-              {getSeatNumbers()}
               <p>
                 รอบรถของคุณเวลา <span>{getDateValue()}</span>
               </p>
@@ -121,11 +120,12 @@ export default function TicketPage({ history }) {
             </section>
             <section className="ticket__section">
               <h3>จ่ายเงินโดย</h3>
-              <p>บัตรเคดิต</p>
+              <p>บัตรเครดิต</p>
             </section>
           </div>
           <footer className="ticket__footer">
             <p>เลขที่นั่ง</p>
+            {getSeatNumbers()}
             {getIdNumber()}
           </footer>
         </article>
