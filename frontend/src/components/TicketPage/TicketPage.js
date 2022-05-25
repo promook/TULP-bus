@@ -58,7 +58,8 @@ export default function TicketPage({ history }) {
       <div>
         <nav className="mb-4 navbar navbar-expand-lg navbar-dark bg-unique hm-gradient">
           <a href="/#" className="navbar-brand Company-Log">
-            TU BUS
+          <img src="https://media.discordapp.net/attachments/951368355405791253/978675702415106048/Thammasat_main_logo.png" width="30" />
+            &nbsp;&nbsp;TU BUS
           </a>
           <button
             className="navbar-toggler"
