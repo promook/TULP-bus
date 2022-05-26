@@ -90,7 +90,7 @@ export default function LogOrsign({ history }) {
                       </small>
                       <span className="signUPtext">
                         <a href="/#" onClick={(e) => getToSignUp(e)}>
-                          สมัครสมาชิก
+                        &nbsp; สมัครสมาชิก
                         </a>
                       </span>
                     </div>
