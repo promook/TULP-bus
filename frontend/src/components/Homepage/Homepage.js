@@ -40,9 +40,9 @@ export default function Homepage({ history }) {
               stroke="url(#grad1)"
               width="266"
               height="50"
-            ></rect>
+            >  <text x="0" y="10" font-family="Verdana" font-size="55" fill="blue"> Hello </text></rect>
           </svg>
-          <span>เข้าสู่ระบบ</span>
+         <span>เข้าสู่ระบบ</span>
         </a>
       </div>
     </div>
