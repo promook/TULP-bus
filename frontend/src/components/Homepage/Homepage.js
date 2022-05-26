@@ -15,12 +15,12 @@ export default function Homepage({ history }) {
       <div className="container">
         <div className="slogan">
           <h1>
-            <span>ปลอดภัยทุกการเดินทาง</span>
+            {/* <span>ปลอดภัยทุกการเดินทาง</span>
             <div className="message">
               <div className="word1">ยินดีต้อนรับ</div>
               <div className="word2">เข้าสู่</div>
               <div className="word3">TU BUS</div>
-            </div>
+            </div> */}
           </h1>
         </div>
 
@@ -28,8 +28,8 @@ export default function Homepage({ history }) {
           <svg width="277" height="62">
             <defs>
               <linearGradient id="grad1">
-                <stop offset="0%" stopColor="#FF8282" />
-                <stop offset="100%" stopColor="#E178ED" />
+                <stop offset="0%" stopColor=" #e10925" />
+                <stop offset="100%" stopColor="#fff204" />
               </linearGradient>
             </defs>
             <rect

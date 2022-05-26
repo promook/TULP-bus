@@ -89,21 +89,21 @@
 }
 
 .mainBtn span {
-  background: rgb(130, 230, 255);
+  background: rgb(239, 169, 113);
   background: -moz-linear-gradient(
     left,
-    rgba(130, 230, 255, 1) 0%,
-    rgb(130, 230, 255) 100%
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
   );
   background: -webkit-linear-gradient(
     left,
-    rgba(130, 230, 255, 1) 0%,
-    rgba(130, 230, 255, 1) 100%
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
   );
   background: linear-gradient(
     to right,
-    rgba(130, 230, 255, 1) 0%,
-    rgb(130, 230, 255) 100%
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
   -webkit-background-clip: text;
@@ -167,13 +167,13 @@ h1 span {
   animation: openclose 5s ease-in-out infinite;
 }
 
-.word1,
+/* .word1,
 .word2,
 .word3 {
   font-family: tahoma;
   font-size: 2.9rem;
-  color: white;
-}
+  color: rgb(1, 0, 0);
+} */
 
 @keyframes openclose {
   0% {
@@ -244,7 +244,7 @@ h1 span {
 }
 
 .slogan {
-  position: absolute;
+  position: center;
   top: 170px;
   left: 645px;
 }
