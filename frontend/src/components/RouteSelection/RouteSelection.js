@@ -58,7 +58,8 @@ export default function RouteSelection({ history }) {
                   className="nav-link waves-effect waves-light"
                   onClick={(e) => handleUserIcon(e)}
                 >
-                  <i className="fa fa-user user"></i>
+                  <i className="fa fa-user user"> &nbsp; โปรไฟล์</i>
+                  
                 </a>
               </li>
               <li className="nav-item">
