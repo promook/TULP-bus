@@ -36,19 +36,19 @@ export default function LogOrsign({ history }) {
               <div className="form-area login-form">
                 <div className="form-content">
                   <h2>ล็อคอิน</h2>
-                  <p>กรุณาเลือกการล็อคอิน</p>
+                  <p>กรุณาเลือกการล็อคอินหรือสมัครสมาชิกใหม่</p>
                   <ul>
                     <li>
-                      <a href="/#" className="facebook">
+                      {/* <a href="/#" className="facebook">
                         <FaFacebookF />
-                      </a>
+                      </a> */}
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="/#" className="twitter">
+                      {/* <a href="/#" className="twitter">
                         <FaTwitterSquare />
-                      </a>
+                      </a> */}
                     </li>
                   </ul>
                 </div>
