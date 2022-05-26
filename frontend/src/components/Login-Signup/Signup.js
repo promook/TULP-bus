@@ -143,11 +143,11 @@ export default function Signup({ history }) {
                       </div>{" "}
                       <div>
                         <small className="form-text text-muted link-text">
-                          คุณมีบัญชีหรือไม่ ?
+                        คุณมีบัญชีหรือไม่ ?
                         </small>{" "}
                         <span className="signuptext">
                           <a href="/#" onClick={(e) => getToSignIn(e)}>
-                            เข้าสู่ระบบ{" "}
+                           เข้าสู่ระบบ{" "}
                           </a>{" "}
                         </span>{" "}
                       </div>{" "}

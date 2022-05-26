@@ -10,9 +10,9 @@ body {
 
 .header {
     min-height: 60vh;
-    background: rgba(36, 132, 192, 0.637);
+    background: rgba(255, 255, 255, 0.637);
     background: linear-gradient(to right, rgba(236, rgba(162, 0, 255, 0.719), 0.658), #009FFF);
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
     width: 6rem;
     object-fit: center;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .location p {
@@ -65,5 +65,5 @@ body {
 }
 
 .bck {
-    background-color: rgba(36, 104, 192, 0.637) !important;
+    background-color: rgba(47, 128, 234, 0.637) !important;
 }
