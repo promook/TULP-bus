@@ -92,18 +92,18 @@
   background: rgb(239, 169, 113);
   background: -moz-linear-gradient(
     left,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 0) 100%
+    rgb(255, 112, 35) 0%,
+    rgb(255, 166, 31) 100%
   );
   background: -webkit-linear-gradient(
     left,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 0) 100%
+    rgb(233, 175, 175) 0%,
+    rgb(194, 59, 59) 100%
   );
   background: linear-gradient(
     to right,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 0) 100%
+    rgb(255, 60, 0) 0%,
+    rgb(253, 218, 91) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
   -webkit-background-clip: text;
@@ -131,7 +131,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background: black;
+  background: rgb(240, 114, 114);
 }
 
 h1 {
