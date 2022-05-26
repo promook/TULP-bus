@@ -78,7 +78,7 @@ a:hover {
 
 .myform-area .form-area .form-content .facebook:hover,
 .myform-area .form-area .form-content .facebook:focus {
-  background: transparent;
+  background: #9a9a9a;
 }
 
 .myform-area .form-area .form-content .twitter {
@@ -99,7 +99,7 @@ a:hover {
 
 .myform-area .form-area .form-content .twitter:hover,
 .myform-area .form-area .form-content .twitter:focus {
-  background: transparent;
+  background: #9a9a9a;
 }
 
 .myform-area .form-area .form-input {

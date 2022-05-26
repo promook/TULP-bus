@@ -10,12 +10,6 @@
 
 .form-container-in {
     position: absolute;
-    background-color: rgba(245, 245, 245, 0.486);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
 }
 
 .log-container {
@@ -44,6 +38,7 @@ p.lead {
 .right-divider {
     background: rgba(255, 178, 55, 0.918);
     padding-top: 30px;
+    
     
 }
 
@@ -159,14 +154,14 @@ p.lead {
     background: #3B579D;
     color: #fff;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 50px;
     font-size: 20px;
     text-transform: capitalize;
     border-radius: 4px;
     text-align: center;
     border: 1px solid #3B579D;
     width: 80%;
-    transition: all .5s;
+    
 }
 
 .icon-soc-fb:hover {
@@ -178,15 +173,14 @@ p.lead {
     padding: 8px 100px;
     background: rgb(93, 153, 223);
     color: #fff;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 30px;
+    margin-left: 50px;
     font-size: 20px;
     text-transform: capitalize;
     border-radius: 4px;
     text-align: center;
     border: 1px solid #3B579D;
     width: 80%;
-    transition: all .5s;
 }
 
 .icon-soc-tw:hover {
@@ -228,14 +222,14 @@ input.form-submit {
 
 .link-text {
     padding-bottom: 5px;
-    padding-left: 20%;
+    padding-left: 30%;
     font-size: 15px;
 }
 
 .signuptext {
     color: green;
     position: relative;
-    left: 130%;
+    left: 100%;
     top: -30px;
     padding-right: 100px;
     cursor: pointer;
