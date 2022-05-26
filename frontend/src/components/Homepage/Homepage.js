@@ -9,7 +9,7 @@ export default function Homepage({ history }) {
   return (
     <div className="container maint-cnt">
       <div className="header-nav">
-        <span className="mytext1"> TU BUS </span>
+        <span className="mytext1"> ระบบจองรถบัสสวัสดิการมหาวิทยาลัยธรรมศาสตร์ ศูนย์ลำปาง </span>
       </div>
 
       <div className="container">
