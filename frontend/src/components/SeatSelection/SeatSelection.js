@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import "./Tab.css";
 export default function SeatSelection() {
-  const [name, setName] = useState([]);
+  const [number, setNumber] = useState([]);
   const [arrowDown, setArrowDown] = useState(false);
   const [gender, setGender] = useState([]);
   const [reservedSeat, setReservedSeat] = useState([
@@ -51,20 +51,14 @@ export default function SeatSelection() {
       console.log(seatNumber);
     }
   };
-  const handleGender = (e, seatNo) => {
-    const { value } = e.target;
-    setGender(gender.concat(value));
-    // console.log(value)
-    // setPassengers(prevState => ({ ...prevState, SeatNo: seatNo, Gender: value }))
-  };
-  const handlePassengerName = (e, seatNo) => {
+  const handlePassengerPhone = (e, seatNo) => {
     e.preventDefault();
     let value = e.target.value;
     // console.log(value)
     if (!value) {
-      return setName("name is required");
+      return setNumber("กรุณาใส่เบอร์โทรศัพท์");
     } else {
-      setName(name.concat(value));
+      setNumber(number.concat(value));
       // setPassengers(prevState => ({ ...prevState, SeatNo: seatNo, Name: value }))
     }
   };
@@ -72,9 +66,8 @@ export default function SeatSelection() {
     e.preventDefault();
     setArrowDown(true);
     localStorage.setItem("reservedSeats", JSON.stringify(seatNumber));
-    localStorage.setItem("nameData", JSON.stringify(name));
-    console.log(name);
-    console.log(gender);
+    localStorage.setItem("nameData", JSON.stringify(number));
+    
   };
 
   const renderPassengerData = (seatArray) => {
@@ -84,12 +77,12 @@ export default function SeatSelection() {
           <p class="text-capitalize text-center">เลขที่นั่ง:{seat}</p>
           <input
             className="form-control seatInp"
-            onBlur={(e) => handlePassengerName(e, seat)}
+            onBlur={(e) => handlePassengerPhone(e, seat)}
             type="text"
-            name="passenger-name"
-            placeholder="กรุณาใส่ชื่อ"
+            name="passenger-number"
+            placeholder="กรุณาใส่เบอร์โทรศัพท์"
           />
-          <div class="form-check form-check-inline">
+          {/* <div class="form-check form-check-inline">
             <input
               class="form-check-input"
               type="radio"
@@ -114,7 +107,7 @@ export default function SeatSelection() {
             <label class="form-check-label" htmlFor="female">
               หญิง
             </label>
-          </div>
+          </div> */}
         </form>
       );
     });
@@ -129,7 +122,7 @@ export default function SeatSelection() {
                 <li className="row row--1">
                   <ol className="seats" type="A">
                     <li className="seat">
-                      <input type="checkbox" disabled value="1A" id="1A" />
+                      <input type="checkbox"  value="1A" id="1A" />
                       <label htmlFor="1A">1A</label>
                     </li>
                     <li className="seat">
@@ -343,9 +336,9 @@ export default function SeatSelection() {
                 ยืนยันการจองตั๋ว
               </button>
             </div>
-            <div className={arrowDown ? "activeArrow2" : "nonActive"}>
+            {/* <div className={arrowDown ? "activeArrow2" : "nonActive"}>
               <FaAngleDoubleDown />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
