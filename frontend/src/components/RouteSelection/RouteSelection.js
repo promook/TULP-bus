@@ -2,6 +2,7 @@ import React from "react";
 import RouteSelector from "../routeSelector/Routeselector";
 import SeatSelection from "../SeatSelection/SeatSelection";
 import PaymentTab from "../PaymentTab/PaymentTab";
+import "./RouteSelection.css";
 
 export default function RouteSelection({ history }) {
   const handleUserIcon = (e) => {

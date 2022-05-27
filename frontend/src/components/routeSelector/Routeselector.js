@@ -68,6 +68,7 @@ export default function Routeselector() {
             <option>แม็กโคร</option>
             <option>บิ๊กซี ลำปาง</option>
           </select>
+        
           <select
             name="ad_account_selected"
             data-style="btn-new"
@@ -104,7 +105,7 @@ export default function Routeselector() {
             }}
             type="date"
           ></input>
-          <input type="submit" className=" btn btn-primary btn-md getRoute" />
+          <input type="submit" value="ยืนยัน" className=" btn btn-primary btn-md getRoute" />
         </form>
 
         <div>{renderBusList(dataInp)}</div>

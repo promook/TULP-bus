@@ -325,3 +325,10 @@ ol {
   background-color: #a32a2f;
   border-color: black;
 }
+
+.btn-info:hover {
+  color: white;
+  background-color: #812023;
+  border-color: black;
+}
+

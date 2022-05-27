@@ -1,7 +1,9 @@
 .paym {
   /* border:1px solid white; */
   height: auto;
-  background-color: #f5b04d;
+  background-color: #F5B04D;
+  border-radius: 30px;
+
 }
 
 .App-payment {
@@ -106,3 +108,14 @@
   background-color: rgba(94, 91, 91, 0.685);
   margin-top: 10px;
 }
+
+.btn-light{
+  color: white;
+  background-color: #a32a2f;
+}
+
+.btn-light:hover{
+  color: white;
+  background-color: #812023;
+}
+

@@ -21,5 +21,13 @@
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: red;
+  background-color: #812023 !important;
+}
+
+a{
+  color:#c13034;
+}
+
+a:hover{
+  color:#812023;
 }
