@@ -123,7 +123,7 @@ export default function Routeselector() {
             type="date"
           ></input>
           {/* <input type="submit" className=" btn btn-primary btn-md getRoute" /> */}
-          <a className="btn btn-primary btn-md getRoute" data-toggle="pill" href="#menu1">ส่ง
+          <a className="btn btn-primary btn-md getRoute" data-toggle="pill" href="#menu1">ยืนยัน
             </a>
         </form>
 

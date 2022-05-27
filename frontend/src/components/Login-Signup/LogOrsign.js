@@ -44,7 +44,10 @@ export default function LogOrsign({ history }) {
         {
           console.log(userData);
           if (result.status)
-            history.push("/routes");
+        {
+          history.push("/routes");
+          localStorage.setItem("nameUser",result.displayname_th);
+        }
           else
             alert("ไม่มีข้อมูล")
         })
@@ -125,16 +128,6 @@ export default function LogOrsign({ history }) {
                       <button type="submit" className="myform-btn">
                         เข้าสู่ระบบ
                       </button>
-                    </div>
-                    <div>
-                      <small className="form-text text-muted signup-text">
-                        คุณมีบัญชีหรือไม่ ?
-                      </small>
-                      <span className="signUPtext">
-                        <a href="/#" onClick={(e) => getToSignUp(e)}>
-                        &nbsp; สมัครสมาชิก
-                        </a>
-                      </span>
                     </div>
                   </form>
                 </div>

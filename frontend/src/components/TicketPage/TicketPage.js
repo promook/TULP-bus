@@ -5,6 +5,7 @@ export default function TicketPage({ history }) {
     e.preventDefault();
     sessionStorage.removeItem("authToken");
     localStorage.removeItem("reservedSeats");
+    localStorage.removeItem("nameUser");
     localStorage.removeItem("nameData");
     localStorage.clear();
     history.push("/");
@@ -23,17 +24,12 @@ export default function TicketPage({ history }) {
       </div>
     );
   };
-  const getPassengerName = () => {
-    let nameArray = localStorage.getItem("nameData");
-    let names = JSON.parse(nameArray);
-    return names.map((name, idx) => {
-      return (
-        <div key={idx}>
-          <p className="names">{name}</p>
-        </div>
-      );
-    });
+  const getPassengerNamefinal = () => {
+    let nameUserticket = localStorage.getItem("nameUser");
+    return <p>{nameUserticket} </p>;
   };
+    
+  
   const getSeatNumbers = () => {
     let noArray = localStorage.getItem("reservedSeats");
     let arr = JSON.parse(noArray);
@@ -51,7 +47,8 @@ export default function TicketPage({ history }) {
   };
   const getDateValue = () => {
     let dat = localStorage.getItem("date");
-    return <p>ถึง: {dat}, 10 โมง (การเดินทางรายชั่วโมง)</p>;
+    let round = localStorage.getItem("schedule");
+    return <p>ถึง: {dat},{round} </p>;
   };
   return (
     <div className="container">
@@ -117,7 +114,7 @@ export default function TicketPage({ history }) {
             </section>
             <section className="ticket__section">
               <h3>ชื่อผู้จอง</h3>
-              {getPassengerName()}
+              {getPassengerNamefinal()}
             </section>
             <section className="ticket__section">
               <h3>จ่ายเงินโดย</h3>
