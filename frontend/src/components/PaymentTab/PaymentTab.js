@@ -26,7 +26,7 @@ export default class App extends React.Component {
   componentDidMount() {
     const tok = sessionStorage.getItem("authToken");
     const decoded = jwt_decode(tok);
-    this.setState({ token: decoded.user });
+    //this.setState({ token: decoded.user });
   }
 
   handleCallback = ({ issuer }, isValid) => {
@@ -79,9 +79,9 @@ export default class App extends React.Component {
     let passArray = localStorage.getItem("nameData");
     if (passArray) {
       let nameArray = JSON.parse(passArray);
-      return nameArray.map((name, idx) => {
-        return <p key={idx}> {name} </p>;
-      });
+      //return nameArray.map((name, idx) => {
+      //  return <p key={idx}> {name} </p>;
+      //});
     }
   };
 

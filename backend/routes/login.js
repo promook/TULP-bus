@@ -5,23 +5,28 @@ const jwt = require("jsonwebtoken");
 var bcrypt = require("bcrypt");
 
 const router = express.Router();
-
-router.post("/login", async(req, res, next) => {
-    const { email, password } = req.body;
+router.post("/login", async (req, res, next) => {
+    const { username, password } = req.body;
     try {
-        User.findOne({ email: email }, (err, doc) => {
-            console.log(doc);
-            if (err) {} else {
-                if (!doc) {} else {
-                    bcrypt.compare(password, doc.password, function(error, response) {
-                        console.log(response);
-                        const token = jwt.sign({ doc }, "top_secret");
-                        res.status(200).json({ token });
-                    });
-                }
-            }
-        });
-    } catch (error) {}
+        console.log("login");
+        // User.findOne({ username: username }, (err, doc) => {
+        //     console.log(`${doc} data in Mongo`);
+            
+        //     if (err) {} else {
+        //         if (!doc) {
+        //             const token = null;
+        //             res.status(200).json({ token });
+        //         }
+        //         else {
+        //             bcrypt.compare(password, doc.password, function(error, response) {
+                         const token = jwt.sign({ username }, "top_secret");
+                         res.status(200).json({ token });
+        //             });
+        //         } 
+        //     }
+        // });
+    } catch (error) { }
+    
     // passport.authenticate("login", async(err, user, info) => {
     //     try {
     //         if (err || !user) {
