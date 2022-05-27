@@ -53,12 +53,12 @@ export default function Signup({ history }) {
                     {" "}
                     เข้าสู่ระบบด้วยโซเชียลมีเดีย{" "}
                   </h3>{" "}
-                  <div className="icon-soc-fb">
+                  {/* <div className="icon-soc-fb">
                     <FaFacebookF />
-                  </div>{" "}
-                  <div className="icon-soc-tw">
+                  </div>{" "} */}
+                  {/* <div className="icon-soc-tw">
                     <FaTwitterSquare />
-                  </div>{" "}
+                  </div>{" "} */}
                 </div>{" "}
                 <div className="left-divider">
                   <div className="col-md-6">
