@@ -121,7 +121,7 @@ export default class App extends React.Component {
         <div className="row">
           <div key="Payment">
             <div className="App-payment cl-1">
-              <p className="pPayment"> กรุณาใส่รายละเอียดบัตรเครดิต </p>{" "}
+              <p className="pPayment"> กรุณาใส่รายละเอียดบัตรเคดิต </p>{" "}
               <Card
                 number={number}
                 name={name}
@@ -202,12 +202,9 @@ export default class App extends React.Component {
                 <div className="col-6 pt">
                   <hr className="hr3" />
                   <p className="hdng"> วันที่ </p> <p className="hdng"> รอบรถ </p>
-                  <p className="hdng"> ขาเข้า - ออก </p>
                   <p className="hdng"> จาก </p> 
-                  <p className="hdng"> ถึง </p> 
-                  <hr className="hr3" />
+                  <p className="hdng"> ถึง </p> <hr className="hr3" />
                   <p className="hdng"> ชื่อผู้จอง </p>{" "}
-                  {localStorage.getItem("nameUser")}{" "}
                   {this.renderNamesOfPassenger()} <hr className="hr3" />
                   <p className="hdng"> ราคาตั๋ว </p>{" "}
                   <p className="hdng"> ราคารวมทั้งหมด </p>{" "}

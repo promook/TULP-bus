@@ -44,10 +44,7 @@ export default function LogOrsign({ history }) {
         {
           console.log(userData);
           if (result.status)
-        {
-          history.push("/routes");
-          localStorage.setItem("nameUser",result.displayname_th);
-        }
+            history.push("/routes");
           else
             alert("ไม่มีข้อมูล")
         })
