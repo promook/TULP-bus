@@ -7,7 +7,6 @@ export default function Routeselector() {
   const [startCity, setStartCity] = useState("");
   const [destination, setDestination] = useState("");
   const [schedule, setSchedule] = useState("");
-  const [Inout, setInOut] = useState("");
   const handleToCity = (e) => {
     e.preventDefault();
     setDestination({ destination: e.target.value });
@@ -24,18 +23,13 @@ export default function Routeselector() {
     localStorage.setItem("start", e.target.value);
     // console.log(startCity)
   };
-  const BusSchedule = (e) => {
+  const Busschedule = (e) => {
     e.preventDefault();
     setSchedule({ schedule: e.target.value });
     localStorage.setItem("schedule", e.target.value);
     // console.log(startCity)
   };
-  const BusInOut = (e) => {
-    e.preventDefault();
-    setInOut({ Inout: e.target.value });
-    localStorage.setItem("Inout", e.target.value);
-    // console.log(startCity)
-  };
+  
 
   const getRoutes = (e) => {
     e.preventDefault();
@@ -59,18 +53,6 @@ export default function Routeselector() {
       <div className="form-group inline"></div>
       <div className="main-container">
         <form className="form-inline" onSubmit={(e) => getRoutes(e)}>
-        <select
-            name="ad_account_selected"
-            data-style="btn-new"
-            class="selectpicker"
-            onChange={(e) => {
-              BusInOut(e);
-            }}
-          >
-            <option>รอบรถขาเข้า-ออก</option>
-            <option>รถขาเข้า</option>
-            <option>รถขาออก</option>
-          </select>
           <select
             name="ad_account_selected"
             data-style="btn-new"
@@ -107,7 +89,7 @@ export default function Routeselector() {
             data-style="btn-new"
             class="selectpicker"
             onChange={(e) => {
-              BusSchedule(e);
+              Busschedule(e);
             }}
           >
             <option>รอบรถ</option>
@@ -123,17 +105,11 @@ export default function Routeselector() {
             }}
             type="date"
           ></input>
-<<<<<<< HEAD
           <input type="submit" value="ยืนยัน" className=" btn btn-primary btn-md getRoute" />
-=======
-          {/* <input type="submit" className=" btn btn-primary btn-md getRoute" /> */}
-          <a className="btn btn-primary btn-md getRoute" data-toggle="pill" href="#menu1">ส่ง
-            </a>
->>>>>>> c04f61be6d5136ac30a7e76334f7b0dbee95fb55
         </form>
 
         <div>{renderBusList(dataInp)}</div>
-        <div className = "bus"><br></br>
+        <div className = "bus">
         <a>
             <img src="https://cdn.discordapp.com/attachments/951368355405791253/979757022520164373/Group_28_1.png" width="500" />
             &nbsp; &nbsp; &nbsp; <img src="https://cdn.discordapp.com/attachments/951368355405791253/979763927955161119/unknown.png" width="500" />
