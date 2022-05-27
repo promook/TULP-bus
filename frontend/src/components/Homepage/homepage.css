@@ -91,7 +91,7 @@
 .mainBtn span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
   -webkit-text-fill-color: rgb(0, 0, 0);
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .mainBtn:hover svg rect {
