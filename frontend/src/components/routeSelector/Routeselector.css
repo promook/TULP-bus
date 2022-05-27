@@ -1,11 +1,9 @@
 .rdc {
   margin-left: -15px;
-  height: 600px;
-  width: 1100px;
+  height: auto;
+  width: 115%;
   border: 1px solid #f5b04d;
   background-color: #ffdfac;
-  border-radius: 35px;
-  border-color: black;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -17,10 +15,8 @@
 }
 
 .main-container {
-  margin-right: -16px;
   height: auto;
-  width: 100%;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .dropdown {
@@ -36,32 +32,26 @@
   top: 2px;
 }
 .getRoute {
-  margin-left: 50px;
+  margin-left: 180px;
 }
 select.selectpicker {
   display: inline-block;
   margin: 0 auto;
-  padding-left: 10px;
+  padding-left: 20px;
   padding: 7px 7px;
   border-radius: 5px;
   outline: none;
   border: none;
-  
+
 }
 .btn-new {
   background-color: rgb(255, 229, 32);
 }
 input {
-  margin-right: 0px;
-  margin-left: 10px;
+  margin-right: 10px;
+  margin-left: 35px;
 }
 
 .margin-left {
   margin-left: 200px;
 }
-.btn-primary {
-  color: white;
-  background-color: #a32a2f;
-  border-color: black;
-}
-
