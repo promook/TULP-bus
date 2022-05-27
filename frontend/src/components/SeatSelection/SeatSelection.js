@@ -140,6 +140,10 @@ export default function SeatSelection() {
                       <input type="checkbox" value="1C" id="1C" />
                       <label htmlFor="1C">1C</label>
                     </li>
+                    <li className="seat">
+                      <input type="checkbox" disabled value="1D" id="1D" />
+                      <label htmlFor="1D">1D</label>
+                    </li>
                   </ol>
                 </li>
                 <li className="row row--2">
@@ -155,6 +159,10 @@ export default function SeatSelection() {
                     <li className="seat">
                       <input type="checkbox" value="2C" id="2C" />
                       <label htmlFor="2C">2C</label>
+                    </li>
+                    <li className="seat">
+                      <input type="checkbox" disabled value="2D" id="2D" />
+                      <label htmlFor="2D">2D</label>
                     </li>
                   </ol>
                 </li>
@@ -172,6 +180,10 @@ export default function SeatSelection() {
                       <input type="checkbox" value="3C" id="3C" />
                       <label htmlFor="3C">3C</label>
                     </li>
+                    <li className="seat">
+                      <input type="checkbox" value="3D" id="3D" />
+                      <label htmlFor="3D">3D</label>
+                    </li>
                   </ol>
                 </li>
                 <li className="row row--4">
@@ -187,6 +199,10 @@ export default function SeatSelection() {
                     <li className="seat">
                       <input type="checkbox" value="4C" id="4C" />
                       <label htmlFor="4C">4C</label>
+                    </li>
+                    <li className="seat">
+                      <input type="checkbox" value="4D" id="4D" />
+                      <label htmlFor="4D">4D</label>
                     </li>
                   </ol>
                 </li>
@@ -204,9 +220,13 @@ export default function SeatSelection() {
                       <input type="checkbox" disabled value="5C" id="5C" />
                       <label htmlFor="5C">5C</label>
                     </li>
+                    <li className="seat">
+                      <input type="checkbox"  value="5D" id="5D" />
+                      <label htmlFor="5D">5D</label>
+                    </li>
                   </ol>
                 </li>
-                <li className="row row--6">
+                {/* <li className="row row--6">
                   <ol className="seats" type="A">
                     <li className="seat">
                       <input type="checkbox" disabled value="6A" id="6A" />
@@ -285,7 +305,7 @@ export default function SeatSelection() {
                       <label htmlFor="10C">10C</label>
                     </li>
                   </ol>
-                </li>
+                </li> */}
               </ol>
             </form>
           </div>

@@ -201,7 +201,8 @@ export default class App extends React.Component {
               <div className="row">
                 <div className="col-6 pt">
                   <hr className="hr3" />
-                  <p className="hdng"> วันที่ </p> <p className="hdng"> จาก </p>
+                  <p className="hdng"> วันที่ </p> <p className="hdng"> รอบรถ </p>
+                  <p className="hdng"> จาก </p> 
                   <p className="hdng"> ถึง </p> <hr className="hr3" />
                   <p className="hdng"> ชื่อผู้จอง </p>{" "}
                   {this.renderNamesOfPassenger()} <hr className="hr3" />
@@ -214,6 +215,8 @@ export default class App extends React.Component {
                     {" "}
                     {localStorage.getItem("date")}{" "}
                   </p>{" "}
+                  {" "}
+                  <p className="usrName"> {localStorage.getItem("schedule")} </p>{" "}
                   <p className="usrName"> {localStorage.getItem("start")} </p>{" "}
                   <p className="usrName">
                     {" "}
@@ -222,7 +225,8 @@ export default class App extends React.Component {
                   <hr className="hr3" />
                   <p className="hdng">
                     เลขที่นั่ง{" "}
-                  </p> {this.renderSeatNumbers()} <p> {this.getSumTotal()} </p>
+                  </p>
+                  {this.renderSeatNumbers()} <p> {this.getSumTotal()} </p>
                 </div>{" "}
               </div>{" "}
             </div>{" "}

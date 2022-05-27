@@ -88,15 +88,15 @@ export default function Routeselector() {
             data-style="btn-new"
             class="selectpicker"
             onChange={(e) => {
-              handleFromCity(e);
+              Busschedule(e);
             }}
           >
-            <option>เวลา</option>
-            <option>06:40 น.</option>
-            <option>11:00 น.</option>
-            <option>13:00 น.</option>
-            <option>17:00 น.</option>
-            <option>17:30 น.</option>
+            <option>รอบรถ</option>
+            <option>รอบที่ 1</option>
+            <option>รอบที่ 2</option>
+            <option>รอบที่ 3</option>
+            <option>รอบที่ 4</option>
+            <option>รอบที่ 5</option>
           </select>
           <input
             onChange={(e) => {
