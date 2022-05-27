@@ -6,6 +6,7 @@ export default function Routeselector() {
   const [dataInp, setData] = useState("");
   const [startCity, setStartCity] = useState("");
   const [destination, setDestination] = useState("");
+  const [schedule, setSchedule] = useState("");
   const handleToCity = (e) => {
     e.preventDefault();
     setDestination({ destination: e.target.value });
@@ -22,6 +23,13 @@ export default function Routeselector() {
     localStorage.setItem("start", e.target.value);
     // console.log(startCity)
   };
+  const Busschedule = (e) => {
+    e.preventDefault();
+    setSchedule({ schedule: e.target.value });
+    localStorage.setItem("schedule", e.target.value);
+    // console.log(startCity)
+  };
+  
 
   const getRoutes = (e) => {
     e.preventDefault();
@@ -74,6 +82,21 @@ export default function Routeselector() {
             <option>แม็กโคร</option>
             <option>บิ๊กซี ลำปาง</option>
             <option>มหาวิทยาลัย ธรรมศาสตร์ ศูนย์ลำปาง</option>
+          </select>
+          <select
+            name="ad_account_selected"
+            data-style="btn-new"
+            class="selectpicker"
+            onChange={(e) => {
+              handleFromCity(e);
+            }}
+          >
+            <option>เวลา</option>
+            <option>06:40 น.</option>
+            <option>11:00 น.</option>
+            <option>13:00 น.</option>
+            <option>17:00 น.</option>
+            <option>17:30 น.</option>
           </select>
           <input
             onChange={(e) => {
