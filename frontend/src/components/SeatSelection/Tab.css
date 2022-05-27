@@ -50,7 +50,7 @@ ol {
 }
 
 .seat input[type="checkbox"]:checked + label {
-  background: #a32a2f;
+  background: #f5b04d;
   color: black;
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
@@ -59,7 +59,7 @@ ol {
 }
 
 .seat input[type="checkbox"]:disabled + label {
-  background: #f5b04d;
+  background: #a32a2f;
   text-indent: -9999px;
   overflow: hidden;
 }
