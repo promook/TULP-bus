@@ -221,8 +221,8 @@ export default class App extends React.Component {
                   {" "}
                   <p className="usrName"> {localStorage.getItem("schedule")} </p>{" "}
                   <p className="usrName"> {localStorage.getItem("Inout")} </p>{" "}
-                  <p className="usrName"> {localStorage.getItem("start")} </p>{" "}
-                  <p className="usrName">
+                  <p className="usrName-e"> {localStorage.getItem("start")} </p>{" "}
+                  <p className="usrName-e">
                     {" "}
                     {localStorage.getItem("destination")}{" "}
                   </p>{" "}
