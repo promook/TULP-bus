@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import * as logFunc from "./loginFunctions.js";
 import "./logOrsign.css";
 import { FaFacebookF, FaTwitterSquare } from "react-icons/fa";
+
 export default function LogOrsign({ history }) {
   let [userData, setUserData] = useState({});
-
   const getToSignUp = (e) => {
     e.preventDefault();
     history.push("/register");
@@ -14,17 +14,60 @@ export default function LogOrsign({ history }) {
     setUserData({ ...userData, [title]: value });
   };
 
-  const submitData = (e) => {
+  const nextPage = () => {
+    try {
+      console.log("TU API start");
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append(
+        "Application-Key",
+        "MTdkNWVlZjZiMjYyNGE5YTE1YjRlMjk3YWFmYjJhMmQzM2U3MDhjMDFmYjdiZWQ1ZTE1YjJkN2NlMGIxZGU0MA=="
+      );
+      myHeaders.append("Cookie", "ci_session=kgs046h06q63h2g4hfvav4gfkjp7dfgr");
+
+      var raw = JSON.stringify({
+        //UserName: "6209700084",
+        //PassWord: "1809901024286"
+        UserName:userData.username,
+        PassWord:userData.password
+      });
+
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      };
+
+       fetch("https://restapi.tu.ac.th/api/v1/auth/Ad/verify", requestOptions)
+        .then((response) => response.json())
+        .then((result) =>
+        {
+          console.log(userData);
+          if (result.status)
+            history.push("/routes");
+          else
+            alert("ไม่มีข้อมูล")
+        })
+      
+    } catch (error) { }
+  };
+
+  const submitData = async (e) => {
     e.preventDefault();
     // console.log(userData)
-    logFunc
+
+   await nextPage();
+
+   await logFunc
       .logUserIn(userData)
       .then((response) => response.data)
       .then((data) => {
         let { token } = data;
+        console.log(token);
         sessionStorage.setItem("authToken", token);
-        history.push("/routes");
-      });
+      }); 
+
   };
 
   return (
@@ -62,10 +105,10 @@ export default function LogOrsign({ history }) {
                     <div class="form-group">
                       <input
                         className="loginInfo"
-                        type="email"
+                        type="text"
                         name="name"
                         required
-                        onChange={(e) => handleChangeEvent(e, "email")}
+                        onChange={(e) => handleChangeEvent(e, "username")}
                       />
                       <label>อีเมล</label>
                     </div>
