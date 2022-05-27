@@ -108,7 +108,14 @@ export default function Routeselector() {
         </form>
 
         <div>{renderBusList(dataInp)}</div>
+        <div className = "bus">
+        <a>
+            <img src="https://cdn.discordapp.com/attachments/951368355405791253/979757022520164373/Group_28_1.png" width="500" />
+            &nbsp; &nbsp; &nbsp; <img src="https://cdn.discordapp.com/attachments/951368355405791253/979763927955161119/unknown.png" width="500" />
+          </a>
+        </div>
       </div>
     </div>
+    
   );
 }

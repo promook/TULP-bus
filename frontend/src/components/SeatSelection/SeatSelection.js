@@ -157,11 +157,11 @@ export default function SeatSelection() {
                       <label htmlFor="2B">2B</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="2C" id="2C" />
+                      <input type="checkbox" disabled value="2C" id="2C" />
                       <label htmlFor="2C">2C</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" disabled value="2D" id="2D" />
+                      <input type="checkbox"  value="2D" id="2D" />
                       <label htmlFor="2D">2D</label>
                     </li>
                   </ol>
@@ -177,7 +177,7 @@ export default function SeatSelection() {
                       <label htmlFor="3B">3B</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="3C" id="3C" />
+                      <input type="checkbox" disabled value="3C" id="3C" />
                       <label htmlFor="3C">3C</label>
                     </li>
                     <li className="seat">
@@ -193,11 +193,11 @@ export default function SeatSelection() {
                       <label htmlFor="4A">4A</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="4B" id="4B" />
+                      <input type="checkbox" disabled value="4B" id="4B" />
                       <label htmlFor="4B">4B</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="4C" id="4C" />
+                      <input type="checkbox" disabled value="4C" id="4C" />
                       <label htmlFor="4C">4C</label>
                     </li>
                     <li className="seat">
@@ -213,7 +213,7 @@ export default function SeatSelection() {
                       <label htmlFor="5A">5A</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="5B" id="5B" />
+                      <input type="checkbox" disabled value="5B" id="5B" />
                       <label htmlFor="5B">5B</label>
                     </li>
                     <li className="seat">
@@ -226,19 +226,23 @@ export default function SeatSelection() {
                     </li>
                   </ol>
                 </li>
-                {/* <li className="row row--6">
+               <li className="row row--6">
                   <ol className="seats" type="A">
                     <li className="seat">
                       <input type="checkbox" disabled value="6A" id="6A" />
                       <label htmlFor="6A">6A</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="6B" id="6B" />
+                      <input type="checkbox" disabled value="6B" id="6B" />
                       <label htmlFor="6B">6B</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="6C" id="6C" />
+                      <input type="checkbox" disabled value="6C" id="6C" />
                       <label htmlFor="6C">6C</label>
+                    </li>
+                    <li className="seat">
+                      <input type="checkbox" value="6D" id="6D" />
+                      <label htmlFor="6D">6D</label>
                     </li>
                   </ol>
                 </li>
@@ -256,6 +260,10 @@ export default function SeatSelection() {
                       <input type="checkbox" disabled value="7C" id="7C" />
                       <label htmlFor="7C">7C</label>
                     </li>
+                    <li className="seat">
+                      <input type="checkbox" value="7D" id="7D" />
+                      <label htmlFor="7D">7D</label>
+                    </li>
                   </ol>
                 </li>
                 <li className="row row--8">
@@ -269,8 +277,12 @@ export default function SeatSelection() {
                       <label htmlFor="8B">8B</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="8C" id="8C" />
+                      <input type="checkbox" disabled value="8C" id="8C" />
                       <label htmlFor="8C">8C</label>
+                    </li>
+                    <li className="seat">
+                      <input type="checkbox" value="8D" id="8D" />
+                      <label htmlFor="8D">8D</label>
                     </li>
                   </ol>
                 </li>
@@ -288,6 +300,10 @@ export default function SeatSelection() {
                       <input type="checkbox" disabled value="9C" id="9C" />
                       <label htmlFor="9C">9C</label>
                     </li>
+                    <li className="seat">
+                      <input type="checkbox" value="9D" id="9D" />
+                      <label htmlFor="9D">9D</label>
+                    </li>
                   </ol>
                 </li>
                 <li className="row row--10">
@@ -297,15 +313,19 @@ export default function SeatSelection() {
                       <label htmlFor="10A">10A</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="10B" id="10B" />
+                      <input type="checkbox" disabled value="10B" id="10B" />
                       <label htmlFor="10B">10B</label>
                     </li>
                     <li className="seat">
-                      <input type="checkbox" value="10C" id="10C" />
+                      <input type="checkbox" disabled value="10C" id="10C" />
                       <label htmlFor="10C">10C</label>
                     </li>
+                    <li className="seat">
+                      <input type="checkbox" value="10D" id="10D" />
+                      <label htmlFor="10D">10D</label>
+                    </li>
                   </ol>
-                </li> */}
+                </li> 
               </ol>
             </form>
           </div>
